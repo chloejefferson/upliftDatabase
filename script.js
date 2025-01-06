@@ -47,7 +47,13 @@ $(document).ready(function () {
         data: tableData,
         columns: columns,
         pageLength: 5,
-        responsive: true
+        responsive: true,
+        autoWidth: false,   // let us manually size columns if needed
+
+        // Force immediate column-size recalculation
+        initComplete: function() {
+          this.api().columns.adjust().responsive.recalc();
+        }
       });
     },
     error: function(err) {
