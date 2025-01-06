@@ -1,30 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Embedded Table - Uplifting</title>
-  <link rel='stylesheet' href='https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css'>
-<link rel='stylesheet' href='https://cdn.datatables.net/searchpanes/2.1.0/css/searchPanes.dataTables.min.css'><link rel="stylesheet" href="./style.css">
-<style>
-  .dataTables_wrapper table.dataTable td {
-    white-space: normal !important;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-  }
-</style>
+
+  <!-- 1) DataTables CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css"
+  />
+
+  <!-- 2) (Optional) DataTables SearchPanes CSS (only if you use SearchPanes) -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.datatables.net/searchpanes/2.1.0/css/searchPanes.dataTables.min.css"
+  />
+
+  <!-- 3) Your custom CSS file -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<!-- partial:index.partial.html -->
+  <h1>My Filterable CSV Table</h1>
 
-<table id="myTable" class="display" style="width: 100%;">
-  <thead></thead>
-  <tbody></tbody>
-</table>
-<!-- partial -->
-  <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
-<script src='https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js'></script>
-<script src='https://cdn.datatables.net/searchpanes/2.1.0/js/dataTables.searchPanes.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js'></script><script  src="./script.js"></script>
+  <!-- The table DataTables will fill -->
+  <table id="myTable" class="display" style="width: 100%;">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
 
+  <!-- 4) jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJ+7y5cZ0J5YxxJr6NAkOmIUI5Wea4f/v0z8="
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- 5) DataTables JS -->
+  <script
+    src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"
+  ></script>
+
+  <!-- (Optional) SearchPanes JS -->
+  <script
+    src="https://cdn.datatables.net/searchpanes/2.1.0/js/dataTables.searchPanes.min.js"
+  ></script>
+
+  <!-- 6) Papa Parse -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"
+  ></script>
+
+  <!-- 7) Your custom JS -->
+  <script src="script.js"></script>
 </body>
 </html>
