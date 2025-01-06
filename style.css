@@ -5,3 +5,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+/* Let text wrap normally, rather than forcing wide columns */
+.dataTables_wrapper table.dataTable td {
+  white-space: normal !important;
