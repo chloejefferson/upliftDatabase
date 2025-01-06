@@ -6,6 +6,9 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Let text wrap normally, rather than forcing wide columns */
+/* Let long text wrap inside table cells */
 .dataTables_wrapper table.dataTable td {
-  white-space: normal !important;
+  white-space: normal !important; 
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+}
