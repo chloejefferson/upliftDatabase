@@ -5,10 +5,3 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
-/* Let long text wrap inside table cells */
-.dataTables_wrapper table.dataTable td {
-  white-space: normal !important; 
-  word-wrap: break-word; 
-  overflow-wrap: break-word;
-}
